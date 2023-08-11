@@ -30,6 +30,7 @@ runs:
   - name: Setting up environment for build...
     shell: bash
     run: |
+      echo $PATH
       apk add --no-cache git maven bash curl wget
       apk --no-cache add openjdk17-jdk
       apk add --no-cache python3 py3-pip
