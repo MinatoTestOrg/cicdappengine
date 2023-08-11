@@ -25,7 +25,8 @@ inputs:
 
 runs:
   using: "composite"
-  
+
+  steps:
   - name: Setting up environment for build...
     shell: bash
     run: |
