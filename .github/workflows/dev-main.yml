@@ -9,6 +9,9 @@ jobs:
     container: node:16-alpine
     
     steps:
+    - name: Repo Checkout...
+      uses: actions/checkout@v3
+      
     - name: Building...
       uses: ./.github/actions/dev-build
       with:
