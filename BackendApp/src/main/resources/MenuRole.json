@@ -1,0 +1,31 @@
+{
+  "left" : [ {
+    "pathsInvolved" : [ ],
+    "accessControl" : [ "all", "Development Administrator" ],
+    "label" : "MENU",
+    "element" : "menuItem"
+  }, {
+    "pathsInvolved" : [ "/applicationuser/applicationuserdetail", "/applicationuser/applicationuserlist" ],
+    "accessControl" : [ "all", "Development Administrator" ],
+    "onClick" : "navigate_to_page",
+    "label" : "APPLICATION_USER",
+    "page" : {
+      "name" : "Application Users",
+      "sid" : "ceeb6665-c498-409a-85ae-dd6e930c7428",
+      "url" : "/applicationuser/applicationuserlist"
+    },
+    "element" : "menuItem"
+  } ],
+  "topBarLeft" : [ ],
+  "topBarMiddle" : [ ],
+  "topBarRight" : [ {
+    "pathsInvolved" : [ ],
+    "languages" : [ {
+      "code" : "en",
+      "name" : "English"
+    } ],
+    "element" : "language"
+  } ],
+  "right" : [ ],
+  "tabs" : [ ]
+}

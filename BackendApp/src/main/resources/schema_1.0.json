@@ -1,0 +1,1 @@
+{"SEARCH":[{"entityName":"ApplicationUser","fields":{"mappings":{"properties":{"userRoles":{"type":"text"},"lastName":{"type":"text"},"firstName":{"type":"text"},"createdDate":{"type":"date"},"createdBy":{"type":"text"},"modifiedDate":{"type":"date"},"modifiedBy":{"type":"text"},"email":{"type":"keyword"},"sid":{"type":"text"}}}}}],"FILES":null,"DB":[],"ANALYTICAL":[]}
