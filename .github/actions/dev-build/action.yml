@@ -40,7 +40,12 @@ runs:
       /usr/local/gcloud/google-cloud-sdk/install.sh --quiet
       echo $PATH
       PATH=$PATH:/usr/local/gcloud/google-cloud-sdk/bin
-      
+      echo $PATH
+
+  - name: Checking path variable...
+    shell: sh
+    run: echo $PATH
+    
   - name: Github actions authentication...
     uses: google-github-actions/auth@v1
     with:
