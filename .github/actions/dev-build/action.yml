@@ -28,7 +28,7 @@ runs:
 
   steps:
   - name: Setting up environment for build...
-    shell: bash
+    shell: sh
     run: |
       apk add --no-cache git maven bash curl wget
       apk --no-cache add openjdk17-jdk
