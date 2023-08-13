@@ -39,15 +39,15 @@ runs:
       chmod -R 777 /usr/local/gcloud/
       /usr/local/gcloud/google-cloud-sdk/install.sh --quiet
       echo $PATH
+      PATH=$PATH:/usr/local/gcloud/google-cloud-sdk/bin
       
-
   - name: Github actions authentication...
     uses: google-github-actions/auth@v1
     with:
       credentials_json: ${{inputs.SERVICE_ACCOUNT_KEYFILE_JSON}}
 
   - name: Building project...
-    shell: bash
+    shell: sh
     run: |
       credentials_json: ${{inputs.SERVICE_ACCOUNT_KEYFILE_JSON}}
       sed -i 's/${env.ARTIFACTORY_USER}/${{inputs.ARTIFACTORY_USER}}/' .m2/settings.xml
