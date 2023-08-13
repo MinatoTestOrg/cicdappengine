@@ -54,7 +54,6 @@ runs:
   - name: Building project...
     shell: sh
     run: |
-      credentials_json: ${{inputs.SERVICE_ACCOUNT_KEYFILE_JSON}}
       sed -i 's/${env.ARTIFACTORY_USER}/${{inputs.ARTIFACTORY_USER}}/' .m2/settings.xml
       sed -i 's/${env.ARTIFACTORY_PASS}/${{inputs.env.ARTIFACTORY_PASS}}/' .m2/settings.xml
       npm install -g @angular/cli
